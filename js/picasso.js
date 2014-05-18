@@ -98,18 +98,25 @@
           } , {
             'wrapper' : '#images',
             'duration' : '200%',
-            'animations' :  []
+            'animations' :  [ {
+                'selector'    : '#laptop',
+                'translateY'  : ['50%', '0%']
+              } ,{
+                'selector'    : '#table',
+                 'translateX'  : ['50%', '0%'],
+                'opacity'     : [0 ,1]
+              }
+            ]
           }, {
             'wrapper' : '#images',
             'duration' : '100%',
             'animations' :  [
-              {
-                'selector'    : '.images-byline',
-                'translateY'  : '-25%',
-                'opacity'     : [0, 1.75] // hack to accelrate opacity speed
-              } , {
+             {
                 'selector'    : '#mgs',
                 'translateY'  : '-75%'
+              }, {
+                'selector'    : '.images-byline',
+                'opacity'  : [0, 1]
               }
             ]
           }, {
@@ -125,6 +132,9 @@
                 'translateY'  : '-105%',
                 'translateX'  : '-105%',
                 'rotate'      : -10 
+              }, {
+                'selector'    : '.images-byline',
+                'opacity'  : [1 , 0]
               }
             ]
           } , {
@@ -138,9 +148,13 @@
                 'opacity'     : [1 ,0],
                 'rotate'      : 90 
               } , {
-                'selector'    : '.images-byline',
-                'translateY'  : ['-25%', '5%'],
-                'opacity'     : [1.75, 0] // hack to accelrate opacity speed
+                'selector'    : '#laptop',
+                'translateY'  : '-75%',
+                 'opacity'     : [1 ,0]
+              }, {
+                'selector'    : '#table',
+                'opacity'     : [1 ,0],
+                'translateY'  : ' 75%'
               }
             ]
           } , {
@@ -210,7 +224,15 @@
                 'selector'    : '#links',
                 'opacity'     : [0, 2],
                 'scale'       : [.8, 1]
-              } 
+              } , {
+                'selector'    : '#linkedin',
+                'translateX'  :  '-5%',
+                'scale'       : [.8, 1]
+              } , {
+                'selector'    : '#github',
+                'translateX'  :  '5%',
+                'scale'       : [.8, 1]
+              }
             ]
           } , {
             'wrapper' : '#links',

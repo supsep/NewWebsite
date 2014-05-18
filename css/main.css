@@ -77,22 +77,32 @@ body {
   width: 100%;
   height: 100%;
 }
-.images-byline {
+.laptop-view{
   position: fixed;
-  top: 63%;
-  left: 10%;
-  color: black;
-  max-width: 22%;
+  top: 31%;
+  left: 57%;
+}
+.images-byline {
+  font-family: "Adobe Caslon Pro", "brandon-grotesque";
+  color: #00CC00;
+  position: absolute;
+  top: 0px;
+  font-size: 150%;
+  width: 300px;
+  z-index: 1;
+  left: 70px;
   opacity: 0;
 }
-.images-byline-2 {
-  text-align: center;
-  position: fixed;
-  top: 93%;
-  left: 25%;
-  color: white;
-  width: 50%;
+#laptop{
+  position: absolute;
   opacity: 0;
+}
+#table{
+  position: fixed;
+ top: 65%;
+  left: 50%;
+  opacity: 0;
+  z-index: -1;
 }
 
 /* 3. Explosion Keyframe
@@ -156,10 +166,19 @@ body {
   right: -60px;
   opacity: 0;
 }
+
 /* 3. Images Keyframe
 --------------------------------------- */
 
-
+.images-byline-2 {
+  text-align: center;
+  position: fixed;
+  top: 93%;
+  left: 25%;
+  color: white;
+  width: 50%;
+  opacity: 0;
+}
 #che{
   width: 30%;
   top: 5%;
@@ -200,12 +219,17 @@ body {
   font-size: 30px;
   line-height: 1.15;
 }
-
+#linkedin{
+  width: 100px;
+  height: 120px;
+}
 #blog{
   width: 100px;
+  height: 120px;
 }
 #github{
-  width: 100px
+  width: 100px;
+  height: 120px;
 }
 .btn {
   display: inline-block;
@@ -219,6 +243,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .1em;
+  margin-right: 35px;
 }
 #reference.btn{
   position: fixed !important;
