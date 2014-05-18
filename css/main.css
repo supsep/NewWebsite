@@ -1,0 +1,250 @@
+body {
+  background: #FFF;
+  font-weight: 300;
+  margin: 0 !important;
+}
+.background {
+  position: fixed;
+  width: 1440px;
+  height: 100%;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+  -webkit-filter : grayscale(90%);
+  -moz-filter : grayscale(90%);
+  filter : grayscale(90%);
+}
+.backgroundtwo {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  text-rendering: optimizeLegibility;
+  opacity: 0;
+  z-index: 0;
+}
+
+.background:after, .backgroundtwo:after {
+  content: '';
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+}
+.wrapper {
+  display: none;
+}
+
+
+/* 1. Intro Keyframe
+--------------------------------------- */
+#intro {
+  position: fixed;
+  top: 70%;
+  left: 9.50%;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.name {
+  font-size: 55px;
+  letter-spacing: 12px;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.byline { 
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-align: center;
+  font-weight: 300;
+}
+.ampersand {
+  font-family: "Adobe Caslon Pro", "brandon-grotesque";
+  font-style: italic;
+}
+
+/* 2. Explosion/Images/Links Structure and Text
+--------------------------------------- */
+#explosion,
+#images {
+  position: fixed;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+}
+.images-byline {
+  position: fixed;
+  top: 63%;
+  left: 10%;
+  color: black;
+  max-width: 22%;
+  opacity: 0;
+}
+.images-byline-2 {
+  text-align: center;
+  position: fixed;
+  top: 93%;
+  left: 25%;
+  color: white;
+  width: 50%;
+  opacity: 0;
+}
+
+/* 3. Explosion Keyframe
+--------------------------------------- */
+.bamboobg{
+  opacity: 0;
+  z-index: 0;
+  position: fixed;
+  width: 40%;
+  top: 0px
+}
+#bbg1 { position: absolute; top: -20px;   left: 0%;  }
+#bbg2 { position: absolute; top: 20px;   left: 120%;  }
+
+#explosiontitle
+{
+  font-size: 55px;
+  letter-spacing: 12px;
+  line-height: 1.5;
+  font-weight: 900;
+  font-family: "Adobe Caslon Pro", "brandon-grotesque";
+  position: fixed;
+  top: 23%;
+  left: 0%;
+  color: black;
+  max-width: 22%;
+  opacity: 0;
+}
+#domExplosionList {
+  position: fixed;
+  width: 80%;
+  top: 40%;
+  left: 15%;
+  opacity: 0;
+  list-style-type: none;
+}
+.dom-explosion-item {
+  position: absolute;
+}
+.dei-1  {   top: 70px;   left: 0;  }
+.dei-6  { top: 170px;   left: 25%; }
+#arbutus {
+  border: 8px solid #666;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+}
+.dei-16 { top: 210px;   left: 60%; }
+
+#bullet{
+  position: fixed;
+  bottom: -60px;
+  right: -60px;
+  opacity: 0;
+}
+/* 3. Images Keyframe
+--------------------------------------- */
+
+
+#che{
+  width: 30%;
+  top: 5%;
+  position: fixed;
+  opacity: 0;
+}
+
+#grass{
+  opacity: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+}
+#fans{  
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background-image: url('../img/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  text-rendering: optimizeLegibility;
+  opacity: 0;
+  z-index: -1;}
+
+/* 4. Links Keyframe
+--------------------------------------- */
+#links {
+  position: fixed;
+  top: 48%;
+  left: 10%;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+}
+.links-byline {
+  font-size: 30px;
+  line-height: 1.15;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid rgba(255,255,255,.5);
+  color: rgba(255,255,255,.8);
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+#reference.btn{
+  position: fixed !important;
+  top: 94% !important;
+  border: none !important;
+  right: 2% !important;
+  text-align: none !important;
+  opacity: 0;
+}
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  border-color: #fff;
+}
+
+
+
+/* 5. Handling resize and small devices
+--------------------------------------- */
+.error {
+  display: none;
+  position: fixed;
+  width: 80%;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  top: 30%;
+  left: 10%;
+}
+.page-error .error {
+  display: block;
+}
+.page-error .container {
+  display: none;
+}
+@media all and (max-width: 1000px) {
+  .container {
+    display: none;
+  }
+  .error {
+    display: block;
+    font-size: 22px;
+  }
+}
