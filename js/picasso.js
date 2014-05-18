@@ -87,11 +87,11 @@
             ]
           } , {
             'wrapper' : '#explosion',
-            'duration' : '200%',
+            'duration' : '100%',
             'animations' :  [
              {
                 'selector'    : '#explosiontitle',
-                'translateX'  : ['34%', '0%'],
+                'translateX'  : ['50%', '0%'],
                 'opacity'     : [1, 0] // hack to accelrate opacity speed
               } 
             ]
